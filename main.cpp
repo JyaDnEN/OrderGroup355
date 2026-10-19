@@ -14,14 +14,6 @@ struct Order {
     int id;
     std::string name;
 };
-
-void addOrder(queue<Order>& pending, int nextId);
-void finishOrder(queue<Order>& pending,stack<Order>& done);
-void showPending(queue<Order> pending);
-void showLastDone(stack<Order> done);
-void showMenu();
-
-
  
 void addOrder(queue<Order>& pending, int& nextNumber){
     Order o;
@@ -66,8 +58,4 @@ if (pending.empty()) {
     done.push(o);
     
     cout << " Finished order for " << o.name << endl;
-}
-
-void showLastDone(stack<Order> done){
-
 }
