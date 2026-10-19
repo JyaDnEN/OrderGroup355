@@ -83,7 +83,7 @@ int main() {
             showLastDone(orders);
         }
         else if (choice == 5) {
-            
+          reopenOrder(orders, compOrders);  
         }
         else if (choice == 6) {
             cout << "Thank you for using this system, have a nice day!";
