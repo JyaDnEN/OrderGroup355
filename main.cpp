@@ -2,8 +2,8 @@
 Group Names: Delonzo Weaver, Jay Neil, Chloe Byrd
 CS 355 Assignment 9
 October 19, 2026
-Description: This assignment is about being a class that handles queues and stacks 
-            in a restaurant order managment setting. It will demonstrate how each one works in a small program.
+Description: This assignment is about building a class that handles queues and stacks 
+            in a restaurant order management setting. We will demonstrate how each one works in our small program.
 */
 
 #include <iostream>
