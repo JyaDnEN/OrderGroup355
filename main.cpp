@@ -5,8 +5,7 @@ CS 355
 Restaurant Order Management- code to run stacks and queues to order a Restaurant.
 */
 
-#ifndef ORDER_H
-#define ORDER_H
+
 
 #include <iostream>
 #include <string>
@@ -24,7 +23,7 @@ void showPending(queue<Order> pending);
 void showLastDone(stack<Order> done);
 void showMenu();
 
-#endif
+
  
 
 
