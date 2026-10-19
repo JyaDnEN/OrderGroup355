@@ -63,7 +63,15 @@ if (pending.empty()) {
     
     cout << " Finished order for " << o.name << endl;
 }
-
+void reopenOrder(queue<Order>& pending, stack<Order>& done) {
+            if (done.top()) {
+            cout << "There are no orders that are complete to reopen." << endl;
+            return;
+            }
+            Order o = done.top();
+            done.pop();
+            pending.push(o);
+            cout << "Reopened order#" << o.number << " for " << o.name << endl;
 int main() {
     int choice = 0; 
     int orderNumber = 100;
