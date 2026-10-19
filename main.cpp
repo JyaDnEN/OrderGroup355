@@ -56,6 +56,7 @@ if (pending.empty()) {
 }
     
     Order o = pending.front();
+    pending.pop();
     done.push(o);
     
     cout << " Finished order for " << o.name << endl;
