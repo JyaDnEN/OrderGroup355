@@ -27,13 +27,13 @@ void addOrder(queue<Order>& pending, int& nextNumber){
 }
 
 void showMenu() {
-    cout << "        Restaurant Order Menu        " << endl;
-         << "1. Add a new order" << endl;
-         << "2. Prepare the next order" << endl;
-         << "3. Display pending orders" << endl;
-         << "4. View most recently completed order" << endl;
-         << "5. Reopen most recently completed order" << endl;
-         << "6. Exit" << endl;
+    cout << "        Restaurant Order Menu        " << endl
+         << "1. Add a new order" << endl
+         << "2. Prepare the next order" << endl
+         << "3. Display pending orders" << endl
+         << "4. View most recently completed order" << endl
+         << "5. Reopen most recently completed order" << endl
+         << "6. Exit" << endl
          << "Choose an option: ";
 }
 
@@ -69,13 +69,13 @@ int main() {
     while (choice != 6) {
         showMenu();
         if (choice == 1) {
-            addOrder(orders,);
+            addOrder(orders,100);
         }
         else if (choice == 2) {
             finishOrder();
         }
         else if (choice == 3) {
-            showPending();
+            showPending(orders, compOrders);
         }
         else if (choice == 4) {
             showLastDone();
