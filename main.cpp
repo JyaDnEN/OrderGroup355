@@ -10,6 +10,8 @@ Description: This assignment is about building a class that handles queues and s
 #include <queue>
 #include <stack>
 
+using namespace std;
+
 struct Order {
     int number;
     string name;
