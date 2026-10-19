@@ -11,8 +11,9 @@ Description: This assignment is about being a class that handles queues and stac
 #include <stack>
 
 struct Order {
-    int id;
-    std::string name;
+    int number;
+    string name;
+    string foodOrder;
 };
  
 void addOrder(queue<Order>& pending, int& nextNumber){
