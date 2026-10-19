@@ -79,7 +79,7 @@ int main() {
             finishOrder(orders, compOrders);
         }
         else if (choice == 3) {
-            showPending(orders, compOrders);
+            showPending(orders);
         }
         else if (choice == 4) {
             showLastDone(orders);
@@ -89,6 +89,7 @@ int main() {
         }
         else if (choice == 6) {
             cout << "Thank you for using this system, have a nice day!";
+        }
         else {
             cout << "ERROR: Invalid input, try again.";
         }
