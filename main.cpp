@@ -72,6 +72,10 @@ void reopenOrder(queue<Order>& pending, stack<Order>& done) {
             done.pop();
             pending.push(o);
             cout << "Reopened order#" << o.number << " for " << o.name << endl;
+}
+
+
+
 int main() {
     int choice = 0; 
     int orderNumber = 100;
