@@ -1,11 +1,10 @@
 /*
-Jay , Chole, 
-CS 355
-10/19/2026
-Restaurant Order Management- code to run stacks and queues to order a Restaurant.
+Group Names: Delonzo Weaver, Jay Neil, Chloe Byrd
+CS 355 Assignment 9
+October 19, 2026
+Description: This assignment is about being a class that handles queues and stacks 
+            in a restaurant order managment setting. It will demonstrate how each one works in a small program.
 */
-
-
 
 #include <iostream>
 #include <string>
@@ -25,8 +24,15 @@ void showMenu();
 
 
  
+void addOrder(queue<Order>& pending, int& nextNumber){
+    Order o;
+    o.number = nextNumber++; 
+    cout << "Enter customer name: ";
+    cin >> o.name;
 
-
+    pending.push(o);
+    cout << "Added: " << o.name << " (Number: " << o.number << ")\n";
+}
 
 void showMenu() {
     cout << "        Restaurant Order Menu        " << endl;
@@ -39,6 +45,17 @@ void showMenu() {
          << "Choose an option: ";
 }
 
+void showPending(queue<Order> pending) {
+    if (pending.empty()) {
+    cout << "The Queue is empty. \n";
+    return;
+    }
+    cout <<  "    Waiting Line   " << endl;
+    while (!pending.empty()) {
+    cout << "#" << pending.front().number << "-" << pending.front().name << endl;
+    pending.pop();
+    }
+}
 
 void finishOrder(queue<Order>& pending,stack<Order>& done){
 if (pending.empty()) {
