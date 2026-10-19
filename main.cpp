@@ -83,6 +83,7 @@ int main() {
     stack<Order> compOrders;
 
     while (choice != 6) {
+        cin >> choice;
         showMenu();
         if (choice == 1) {
             addOrder(orders, orderNumber);
