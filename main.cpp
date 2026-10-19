@@ -60,3 +60,34 @@ if (pending.empty()) {
     
     cout << " Finished order for " << o.name << endl;
 }
+
+int main() {
+    int choice = 0; 
+    queue<Order> orders;
+    stack<Order> compOrders;
+
+    while (choice != 6) {
+        showMenu();
+        if (choice == 1) {
+            addOrder(orders,);
+        }
+        else if (choice == 2) {
+            finishOrder();
+        }
+        else if (choice == 3) {
+            showPending();
+        }
+        else if (choice == 4) {
+            showLastDone();
+        }
+        else if (choice == 5) {
+            
+        }
+        else if (choice == 6) {
+            cout << "Thank you for using this system, have a nice day!";
+        else {
+            cout << "ERROR: Invalid input, try again.";
+        }
+    }
+    return 0;
+}
